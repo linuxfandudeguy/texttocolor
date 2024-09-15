@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Color</title>
+<link rel="stylesheet" href="./styles.css" integrity="sha256-tq2XQC7duQPnpdenPuR6Z5IE773aRSGjkcutnfUJuTI=" crossorigin="anonymous">
+    <style>
+        td {
+            height: 100px; /* Fixed height for squarish look */
+            position: relative; /* Keep the text centered */
+            line-height: 100px; /* Center text vertically */
+            text-align: center; /* Center text horizontally */
+            font-weight: bold; /* Make text bold for visibility */
+            color: white; /* Set text color to white for better contrast */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center h-screen bg-gray-200">
+    <h1 class="text-3xl font-bold mb-4">Text to Color</h1>
+    <input id="colorInput" type="text" placeholder="Enter a random word (e.g chucknorris)" class="border p-2 rounded mb-2">
+    <div>
+        <button id="generateButton" class="bg-blue-500 text-white p-2 rounded mr-2">Generate Color </button>
+        <button id="clearButton" class="bg-red-500 text-white p-2 rounded">Clear</button>
+    </div>
+    
+    <!-- Table to hold the color boxes -->
+    <table id="colorTable" class="mt-4 border-collapse">
+        <tbody>
+            <!-- Dynamic color cells will be added here -->
+        </tbody>
+    </table>
+<script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+<div class="elfsight-app-5c0d81bb-4bb8-4746-9af5-b410788032c7" data-elfsight-app-lazy>
+</div>    
+<script src="./index.js" integrity="sha256-QwwYO2nIKPoZZPDw+wFTHz82spbUgL+ppdLeO8do0s4=" crossorigin="anonymous"></script>
+</body>
+</html>
